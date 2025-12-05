@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Pixelify Sans');
+
+body {
+    font-family: Pixelify Sans;
+}
+
+.topbar {
+    display: flex;
+}
+
+.topbar ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style-type: none;
+    gap: 5vh;
+    justify-content: flex-end;
+}
