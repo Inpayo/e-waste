@@ -2,17 +2,46 @@
 
 body {
     font-family: Pixelify Sans;
+    display: flex;
+    flex-direction: column;
 }
 
-.topbar {
-    display: flex;
-}
 
 .topbar ul {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: auto;
+    padding-inline: 5vh;
     list-style-type: none;
     gap: 5vh;
     justify-content: flex-end;
+}
+
+.majorContent {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+    border: 2vh;
+    border-color: black;
+}
+
+.majorContent h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.minorContent {
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.details h3 {
+    display: flex;
+    justify-content: center;
 }
