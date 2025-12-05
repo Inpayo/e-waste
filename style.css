@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Pixelify Sans');
+
+body {
+    font-family: Pixelify Sans;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(77, 77, 77);
+
+}
+
+.topbar {
+    background-color: rgb(198, 198, 198);
+    border-style: solid;
+    border-width: 1.5vh;
+    border-color: rgb(102, 102, 102);
+}
+
+.topbar ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-inline: 5vh;
+    list-style-type: none;
+    gap: 5vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topbar li {
+    font-size: x-large;
+}
+
+.majorContent {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-inline: auto;
+    border: 2vh;
+    background-color: rgb(232, 232, 232);
+    border-style: solid;
+    border-width: 1.5vh;
+    border-color: rgb(102, 102, 102);
+    margin-block: 4vh;
+    padding-inline: 8vh;
+}
+
+.majorContent h1 {
+    display: flex;
+    justify-content: center;
+    margin-block: 2vh;
+}
+
+.minorContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    margin-block: 4vh;
+    background-color: rgb(198, 198, 198);
+    border-style: solid;
+    border-width: 1.5vh;
+    border-color: rgb(102, 102, 102);
+}
+
+.minorContent h2 {
+    display: flex;
+    justify-content: center;
+    margin-block: 2vh;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+}
+
+.details h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.smallBox {
+    margin: 1vh;
+}
+
+
+@media (max-width: 40rem) {
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topbar ul {
+        gap: 1vh;
+    }
+
+    .topbar li {
+        font-size: medium;
+    }
+}
