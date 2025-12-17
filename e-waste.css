@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap');
+
+:root {
+    --bg: #E8F8F5;
+    --panel: #F7F7F7;
+    --nav-bg: #067A7B;
+    --accent: #067A7B;
+    --accent-2: #067A7B;
+    --text: #000000;
+    --muted: #3d5652;
+    --card: #F7F7F7;
+    --border: #81B622;
+    --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8F8F5; 
+    color: var(--text);
+    min-height: 100vh;
+}
+
+
+.topbar {
+    background-color: #067A7B;
+    border-style: solid;
+    border-width: 1.5vh;
+    border-color: #067A7B;
+}
+
+.topbar ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-inline: 5vh;
+    list-style-type: none;
+    gap: 5vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topbar li {
+    font-size: x-large;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: min(1100px, 94%);
+    margin: 40px auto 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.panel {
+    background: var(--panel);
+    border: 0.5rem solid var(--border);
+    padding: 28px;
+    box-shadow: var(--shadow);
+}
+
+.panel-header h2 {
+    margin: 0 0 6px;
+    color: var(--accent-2);
+}
+
+.panel-header p {
+    margin: 0 0 16px;
+    color: var(--muted);
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+}
+
+.grid.two {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+}
+
+.hero h1 {
+    margin: 0 0 12px;
+    font-size: clamp(28px, 5vw, 38px);
+    color: var(--text);
+}
+
+.lede {
+    margin: 0 0 16px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    background: var(--card);
+    color: var(--muted);
+    box-shadow: none;
+}
+
+.crt {
+    position: relative;
+    background: #d9e9e3;
+    border: 2px solid var(--border);
+    padding: 18px;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.crt::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.18) 1px,
+        transparent 1px,
+        transparent 4px
+    );
+    pointer-events: none;
+}
+
+.crt-glow {
+    position: absolute;
+    inset: 20% 10%;
+    background: radial-gradient(circle, rgba(138, 191, 107, 0.18), transparent 60%);
+    filter: blur(10px);
+}
+
+.crt-content {
+    position: relative;
+    display: grid;
+    gap: 10px;
+}
+
+.tiny-label {
+    color: var(--muted);
+    margin: 0;
+    font-size: 13px;
+}
+
+.metric {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(31, 43, 42, 0.25);
+    padding-bottom: 6px;
+    color: var(--text);
+}
+
+.metric .label {
+    color: var(--muted);
+}
+
+.metric .value {
+    color: var(--accent-2);
+}
+
+.card {
+    background: var(--card);
+    border: 0.5rem solid var(--border);
+    padding: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    color: var(--accent-2);
+    text-align: center;
+}
+
+.card p {
+    margin: 0;
+    color: var(--text);
+    text-align: justify;
+}
+
+ul {
+    margin: 8px 0 0 0;
+    padding-left: 18px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: var(--text);
+}
+
+.retro-table th,
+.retro-table td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+}
+
+.retro-table thead {
+    background: rgba(138, 191, 107, 0.15);
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 12px;
+    display: grid;
+    gap: 8px;
+}
+
+.timeline li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(63, 98, 89, 0.3);
+    padding-bottom: 6px;
+    color: var(--text);
+}
+
+.note {
+    color: var(--muted);
+    margin: 4px 0 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: #D1FF7E;
+    border-top: 1rem solid var(--border);
+}
