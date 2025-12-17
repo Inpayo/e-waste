@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600&display=swap');
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8F8F5;
+}
+
+/* ================================
+   TOP NAV 
+   ================================ */
+.topbar {
+    background-color: #067A7B;                
+    border-style: solid;
+    border-width: 1.5vh;                       
+    border-color:  #067A7B;
+}
+
+.topbar ul {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding-inline: 5vh;
+    list-style-type: none;
+    gap: 5vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.topbar li {
+    font-size: x-large;  
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+/* ================================
+   TITLE SECTION
+   ================================ */
+.title {
+    background: #599e97;
+    color: white;
+    padding: 5rem 4rem;  /* Reduce padding slightly since content is side by side */
+    min-height: 60vh;    /* Enough height to fit text and image */
+    display: flex;
+    align-items: center; 
+}
+
+.titleContent {
+    display: flex;
+    flex-direction: row;        /* Keep text left, image right */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    flex-wrap: nowrap;          /* Prevent image from going below text */
+}
+
+.title .text {
+    flex: 1 1 50%;              /* Text takes 50% */
+    max-width: 600px;           /* Prevent text from stretching too much */
+    min-width: 300px;
+}
+
+.title .text h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 3px 3px #000;
+}
+
+.title .text p {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.title .image {
+    flex: 1 1 50%;             
+    display: flex;
+    justify-content: center;
+    max-width: 600px;           
+}
+
+.title .image img {
+    width: 100%;
+    max-width: 500px;           
+    height: auto;
+    
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5),
+                0 0 10px #FFD700 inset;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* ================================
+   MAIN CONTENT
+   ================================ */
+.sectionTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+/* ================================
+   FEATURE CARDS 
+   ================================ */
+.featureContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    padding: 2rem;
+    overflow-x: auto;
+    text-decoration: none;
+    
+}
+
+.featureCard {
+    display: block;                 
+    text-decoration: none;          
+    background-color: #F7F7F7;
+    width: 20rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 0.5rem solid #81B622;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.featureCard h3 {
+    color: #067A7B;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.featureCard p {
+    font-size: 1.1rem;
+    text-justify: inter-word;
+    text-align: justify; 
+    color: rgb(0, 0, 0);
+}
+
+
+.featureCard:hover {
+    transform: translateY(-5px);  
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+
+.eWasteCard p {
+    margin-top: 3.3rem;   
+}
+
+/* ================================
+   FOOTER
+   ================================ */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: #D1FF7E;
+    border-top: 1rem solid #81B622;
+}
+
+
+/* ================================
+   MOBILE
+   ================================ */
+@media (max-width: 768px) { /* Use 768px for tablets & phones */
+
+    .topbar ul {
+        flex-direction: column;   /* Stack menu items vertically */
+        align-items: center;      /* Center the links */
+        gap: 1rem;                /* Space between items */
+        padding-inline: 0;        /* Remove horizontal padding */
+    }
+
+    .topbar li {
+        font-size: 1.2rem;        /* Slightly smaller on mobile */
+    }
+
+    .titleContent {
+        flex-direction: column; /* Stack text above image */
+        align-items: center;    /* Center both */
+        text-align: center;     
+        gap: 2rem;             /* Space between text and image */
+    }
+
+    .title .text {
+        flex: 1 1 100%;        /* Full width */
+        max-width: 90%;        /* Leave some padding from edges */
+    }
+
+    .title .text h1 {
+        font-size: 2.5rem;     /* Smaller font for mobile */
+    }
+
+    .title .text p {
+        font-size: 1.2rem;     
+    }
+
+    .title .image {
+        flex: 1 1 100%;        /* Full width */
+        max-width: 90%;        /* Same padding */
+        margin-top: 1rem;
+    }
+
+    .title .image img {
+        max-width: 100%;       /* Fill container */
+        height: auto;
+    }
+
+    .featureContainer {
+        flex-direction: column;  /* Stack cards vertically */
+        align-items: center;     /* Center cards */
+        overflow-x: hidden;      /* Remove horizontal scroll */
+        padding: 1rem;
+        gap: 1.5rem;             /* Space between cards */
+    }
+
+    .featureCard {
+        width: 90%;              /* Cards take most of screen width */
+    }
+}
+
+
