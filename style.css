@@ -6,15 +6,15 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: rgb(77, 77, 77);
+    background-color: #E8F8F5;
 
 }
 
 .topbar {
-    background-color: rgb(198, 198, 198);
+    background-color: #067A7B;
     border-style: solid;
     border-width: 1.5vh;
-    border-color: rgb(102, 102, 102);
+    border-color: #067A7B;
 }
 
 .topbar ul {
@@ -32,6 +32,16 @@ body {
     font-size: x-large;
 }
 
+.topbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.topbar a:hover {
+    text-decoration: underline;
+}
+
+
 .majorContent {
     display: flex;
     flex-direction: column;
@@ -41,7 +51,7 @@ body {
     background-color: rgb(232, 232, 232);
     border-style: solid;
     border-width: 1.5vh;
-    border-color: rgb(102, 102, 102);
+    border-color: #81B622;
     margin-block: 4vh;
     padding-inline: 8vh;
 }
@@ -60,7 +70,7 @@ body {
     background-color: rgb(198, 198, 198);
     border-style: solid;
     border-width: 1.5vh;
-    border-color: rgb(102, 102, 102);
+    border-color: #81B622;
 }
 
 .minorContent h2 {
@@ -83,6 +93,15 @@ body {
     margin: 1vh;
 }
 
+.footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: #D1FF7E;
+    border-top: 1rem solid #81B622;
+}
+
+
 
 @media (max-width: 40rem) {
     .details {
@@ -91,10 +110,14 @@ body {
     }
 
     .topbar ul {
-        gap: 1vh;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding-inline: 0;
     }
 
     .topbar li {
-        font-size: medium;
+        font-size: 1.2rem;
     }
+
 }
