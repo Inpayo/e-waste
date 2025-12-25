@@ -6,6 +6,7 @@
     <title>Responsibility - Digital Responsibility</title>
     <link rel="stylesheet" href="home.css"> 
     <style>
+        /* Styling for the technical implementation box */
         .code-container {
             background-color: #2d2d2d;
             color: #fff;
@@ -22,7 +23,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-            padding: 0 10%;
+            padding: 0 5%;
             margin-bottom: 40px;
         }
         @media (max-width: 768px) {
@@ -48,7 +49,7 @@
             <div class="titleContent">
                 <div class="text">
                     <h1>DIGITAL RESPONSIBILITY</h1>
-                    <p>A thoughtful, ethical, and sustainable approach to the lifecycle of our electronic devices[cite: 134].</p>
+                    <p>A thoughtful, ethical, and sustainable approach to the lifecycle of our electronic devices.</p>
                 </div>
                 <div class="image">
                     <img src="laptopewaste.webp" alt="Responsible Tech Illustration">
@@ -63,48 +64,45 @@
         <section class="featureContainer">
             <div class="featureCard">
                 <h3>Product Longevity</h3>
-                <p>We must move beyond mere consumption and take active care of our devices to extend their useful life[cite: 135, 137].</p>
+                <p>Focus on taking active care of devices to extend their useful life and conserve resources.</p>
             </div>
             <div class="featureCard">
-                <h3>The Right to Repair</h3>
-                <p>Seek repairs when a device malfunctions rather than replacing it immediately to reduce waste[cite: 138].</p>
+                <h3>Right to Repair</h3>
+                <p>Actively seek repairs for malfunctioning devices instead of replacing them immediately.</p>
             </div>
             <div class="featureCard">
-                <h3>Conscious Choices</h3>
-                <p>Avoid unnecessary upgrades driven by marketing and choose manufacturers committed to ethical labor[cite: 139, 142].</p>
+                <h3>Mindful Usage</h3>
+                <p>Being conscious of energy consumption and practicing digital minimalism to reduce overhead.</p>
             </div>
         </section>
 
         <section class="sectionTitle">
-            <h2>Why Irresponsible Use is Dangerous</h2>
+            <h2>The High Cost of Irresponsible Use</h2>
         </section>
 
-        <section class="info-grid">
+        <div class="info-grid">
             <div class="featureCard" style="width: 100%; border-color: #067A7B;">
-                <h3>Environmental Hazards</h3>
-                <p>Improper discarding leads to toxic substances like **Lead**, **Mercury**, and **Cadmium** leaching into soil and water[cite: 147].</p>
-                <p>This perpetual demand also leads to resource-intensive mining, causing deforestation and water contamination[cite: 148, 149].</p>
+                <h3>Toxic Pollution</h3>
+                <p>Improper disposal in landfills allows substances like Lead, Mercury, and Cadmium to leach into soil and water.</p>
             </div>
             <div class="featureCard" style="width: 100%; border-color: #067A7B;">
-                <h3>Socio-Economic Issues</h3>
-                <p>Irresponsible tech use fuels a "take-make-dispose" **Linear Economy** instead of a sustainable Circular Economy[cite: 159, 160].</p>
-                <p>Mining operations often involve unsafe working conditions and can even fund regional conflicts[cite: 162].</p>
+                <h3>Resource Depletion</h3>
+                <p>Constant demand necessitates intensive mining for rare minerals, often causing severe environmental damage.</p>
             </div>
-        </section>
-        
-        
+        </div>
 
+        
         <section class="sectionTitle">
-            <h2>The Role of Systematic Change</h2>
+            <h2>Ensuring Systematic Change</h2>
         </section>
 
         <section class="featureContainer" style="flex-direction: column; align-items: center;">
             <div class="featureCard" style="width: 85%; text-align: left;">
-                <h3>What Governments & Companies Can Do</h3>
+                <h3>Government and Corporate Roles</h3>
                 <ul>
-                    <li>**Implement "Right to Repair"**: Mandate that manufacturers provide spare parts and tools to consumers[cite: 180].</li>
-                    <li>**EPR Schemes**: Make producers financially responsible for the recycling and disposal of their products[cite: 183].</li>
-                    <li>**Ethical AI Policies**: Companies should ensure their software and algorithms do not make unfair choices[cite: 221].</li>
+                    <li><strong>Extended Producer Responsibility:</strong> Manufacturers must be responsible for the entire life cycle of their products.</li>
+                    <li><strong>Consumer Incentives:</strong> Providing tax breaks or rebates for repairing or recycling old electronics.</li>
+                    <li><strong>Ethical AI Policies:</strong> Ensuring that software algorithms are designed fairly and transparently.</li>
                 </ul>
             </div>
         </section>
@@ -120,9 +118,9 @@
 // Logic to guide responsible digital habits
 function evaluateTechUse(deviceAge, isUpgradable) {
     if (deviceAge > 4 && isUpgradable) {
-        return "RESPONSIBLE ACTION: Upgrade RAM/SSD instead of buying new.";
+        return "RESPONSIBLE ACTION: Upgrade internal parts instead of buying new.";
     } else if (deviceAge > 4 && !isUpgradable) {
-        return "RESPONSIBLE ACTION: Donate or Recycle at a certified centre.";
+        return "RESPONSIBLE ACTION: Recycle at a certified centre.";
     }
     return "RESPONSIBLE ACTION: Continue maintenance and mindful usage.";
 }
@@ -140,4 +138,5 @@ console.log(evaluateTechUse(5, true));
 
 </body>
 </html>
+
 
