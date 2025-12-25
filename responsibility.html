@@ -6,27 +6,24 @@
     <title>Responsibility - Digital Responsibility</title>
     <link rel="stylesheet" href="home.css"> 
     <style>
-        /* These styles ensure your code box looks good even if the CSS link fails */
+        /* This keeps your code box looking nice and centered */
         .code-container {
             background-color: #f4f4f4;
             border-radius: 8px;
             padding: 20px;
-            margin: 20px auto; 
-            border-left: 5px solid #2d5a27;
+            margin: 40px auto; 
+            border-left: 5px solid #067A7B;
             font-family: 'Courier New', Courier, monospace;
             overflow-x: auto;
             max-width: 80%; 
-            text-align: left; 
-        }
-        .responsibility-content {
-            padding: 50px 10%;
-            text-align: center;
+            text-align: left;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <header class="topbar">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -38,27 +35,33 @@
     </header>
 
     <main>
-        <section class="welcome-section">
-            <h1>Our Digital Responsibility</h1>
-            <p>Below is the code/technical implementation for our responsibility initiative:</p>
-        </section>
-
-        <section class="responsibility-content">
-            <div class="code-container">
-                <pre>
-<code>
-// Example:
-function promoteResponsibility() {
-    console.log("Proper e-waste disposal is a collective duty.");
-}
-promoteResponsibility();
-</code>
-                </pre>
+        <section class="title">
+            <div class="titleContent">
+                <div class="text">
+                    <h1>OUR RESPONSIBILITY</h1>
+                    <p>Below is the code implementation for our e-waste project.</p>
+                </div>
             </div>
         </section>
+
+        <div class="code-container">
+            <pre>
+<code>
+// Digital Responsibility Logic
+function checkEWaste(item) {
+    if (item.isElectronic) {
+        return "Dispose at MMU Recycling Centre";
+    }
+    return "Standard disposal";
+}
+
+console.log(checkEWaste({name: "Old Laptop", isElectronic: true}));
+</code>
+            </pre>
+        </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 MMU, Group V. All rights reserved.</p>
     </footer>
 
