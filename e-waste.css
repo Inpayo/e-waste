@@ -261,3 +261,61 @@ table {
     background-color: #D1FF7E;
     border-top: 1rem solid var(--border);
 }
+
+
+@media (max-width: 768px) 
+{ 
+    .topbar ul {
+        flex-direction: column;   /* Stack menu items vertically */
+        align-items: center;      /* Center the links */
+        gap: 1rem;                /* Space between items */
+        padding-inline: 0;        /* Remove horizontal padding */
+    }
+
+    .topbar li {
+        font-size: 1.2rem;        /* Slightly smaller on mobile */
+    }
+
+    .titleContent {
+        flex-direction: column; /* Stack text above image */
+        align-items: center;    /* Center both */
+        text-align: center;     
+        gap: 2rem;             /* Space between text and image */
+    }
+
+    .title .text {
+        flex: 1 1 100%;        /* Full width */
+        max-width: 90%;        /* Leave some padding from edges */
+    }
+
+    .title .text h1 {
+        font-size: 2.5rem;     /* Smaller font for mobile */
+    }
+
+    .title .text p {
+        font-size: 1.2rem;     
+    }
+
+    .title .image {
+        flex: 1 1 100%;        /* Full width */
+        max-width: 90%;        /* Same padding */
+        margin-top: 1rem;
+    }
+
+    .title .image img {
+        max-width: 100%;       /* Fill container */
+        height: auto;
+    }
+
+    .featureContainer {
+        flex-direction: column;  /* Stack cards vertically */
+        align-items: center;     /* Center cards */
+        overflow-x: hidden;      /* Remove horizontal scroll */
+        padding: 1rem;
+        gap: 1.5rem;             /* Space between cards */
+    }
+
+    .featureCard {
+        width: 90%;              /* Cards take most of screen width */
+    }
+}
