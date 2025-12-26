@@ -42,7 +42,7 @@ body {
 }
 
 section {
-    background-color: rgb(255, 255, 255);
+    background-color: #E8F8F5;
     margin: 0;
     padding: 0;
 }
@@ -91,6 +91,25 @@ section {
     margin-block: 2vh;
 }
 
+.map {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-inline: auto;
+    border: 2vh;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1.5vh;
+    border-color: #81B622;
+    margin-block: 4vh;
+}
+
+.mapInfo {
+    padding: 5vh;
+    font-size: x-large;
+    font: bold;
+}
+
 .minorContent {
     display: flex;
     flex-direction: column;
@@ -122,6 +141,7 @@ section {
     border-width: 1.5vh;
     border-color: #81B622;
     border-radius: 4vh;
+    box-shadow: #067A7B;
 }
 
 .card h2 {
