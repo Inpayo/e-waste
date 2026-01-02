@@ -119,6 +119,12 @@ section {
     border-style: solid;
     border-width: 1.5vh;
     border-color: #81B622;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
+}
+
+.minorContent:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
 }
 
 .minorContent h2 {
@@ -142,12 +148,18 @@ section {
     border-color: #81B622;
     border-radius: 4vh;
     box-shadow: #067A7B;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0);
 }
 
 .card h2 {
     display: flex;
     justify-content: center;
     margin-block: 2vh;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .details {
